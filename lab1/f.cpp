@@ -10,14 +10,14 @@ int main(){
     cin >> a;
     vector<int> m;
     for(int i = 2; i < 325; i++){
-        if(n[i] == false){
+        if(!n[i]){
             for(int j = i*i; j < 105000; j += i){
                 n[j] = true;
             }
         }
     }
     for(int i = 2; i < 105000; i++){
-        if(n[i] == false){
+        if(!n[i]){
             m.push_back(i);
         }
     }
